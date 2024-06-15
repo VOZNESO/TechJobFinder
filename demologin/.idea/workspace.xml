@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3b4eb781-5439-4571-99d0-0a35aa1d7b9d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../template/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../template/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../template/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../template/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../template/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../template/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../template/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../template/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../template/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../template/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../template/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../template/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../template/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../template/src/components/Blog.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../template/src/components/Footer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../template/src/components/HeaderTechJobFinder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../template/src/components/HomePage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../template/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../template/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../template/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../template/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../template/src/setupTests.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2hnoL1wm7rq7rcIqSY6UT3pj9gv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.logindemo.demologin.config" />
+      <recent name="com.logindemo.demologin.service" />
+      <recent name="com.logindemo.demologin.dto" />
+      <recent name="com.logindemo.demologin.repository" />
+      <recent name="com.logindemo.demologin" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemologinApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="demologin" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.logindemo.demologin.DemologinApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3b4eb781-5439-4571-99d0-0a35aa1d7b9d" name="Default Changelist" comment="" />
+      <created>1718239143700</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1718239143700</updated>
+      <workItem from="1718239145084" duration="9972000" />
+      <workItem from="1718267558393" duration="14412000" />
+      <workItem from="1718436201544" duration="1908000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
