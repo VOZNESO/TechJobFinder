@@ -1,0 +1,21 @@
+# Node modules
+node_modules/
+
+# Build outputs
+build/
+dist/
+
+# Cache
+.cache/
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE specific files
+.vscode/
+.idea/
+
