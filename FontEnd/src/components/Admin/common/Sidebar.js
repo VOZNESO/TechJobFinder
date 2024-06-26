@@ -13,6 +13,12 @@ function Sidebar(props) {
               <span>Dashboard</span>
             </Link>
           </li>{/* End Dashboard Nav */}
+          <li className="nav-item">
+            <Link className="nav-link collapsed" to="/usermanage">
+              <i className="bi bi-person" />
+              <span>User</span>
+            </Link>
+          </li>{/* End Profile Page Nav */}
           
           <li className="nav-heading">Pages</li>
           <li className="nav-item">
@@ -21,12 +27,7 @@ function Sidebar(props) {
               <span>Profile</span>
             </Link>
           </li>{/* End Profile Page Nav */}
-          <li className="nav-item">
-            <Link className="nav-link collapsed" to="/faq">
-              <i className="bi bi-question-circle" />
-              <span>F.A.Q</span>
-            </Link>
-          </li>{/* End F.A.Q Page Nav */}
+          
           <li className="nav-item">
             <Link className="nav-link collapsed" to="/contact">
               <i className="bi bi-envelope" />
@@ -36,13 +37,13 @@ function Sidebar(props) {
           <li className="nav-item">
             <Link className="nav-link collapsed" to="/signup">
               <i className="bi bi-card-list" />
-              <span>Register</span>
+              <span>Sign Up</span>
             </Link>
           </li>{/* End Register Page Nav */}
           <li className="nav-item">
             <Link className="nav-link collapsed" to="/signin">
               <i className="bi bi-box-arrow-in-right" />
-              <span>Login</span>
+              <span>Sign In</span>
             </Link>
           </li>{/* End Login Page Nav */}
           <li className="nav-item">
@@ -57,6 +58,12 @@ function Sidebar(props) {
               <span>Blank</span>
             </Link>
           </li>{/* End Blank Page Nav */}
+          <li className="nav-item">
+            <Link className="nav-link collapsed" to="/faq">
+              <i className="bi bi-question-circle" />
+              <span>F.A.Q</span>
+            </Link>
+          </li>{/* End F.A.Q Page Nav */}
           <li className="nav-item">
             <Link className="nav-link collapsed" to="/">
               <i className="bi bi-box-arrow-in-left" />

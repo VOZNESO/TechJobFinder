@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from './Components/Header';
-import Sidebar from './Components/Sidebar';
-import Footer from './Components/Footer';
+import Header from './common/Header';
+import Sidebar from './common/Sidebar';
+import Footer from './common/Footer';
 
 function FAQs(props) {
     return (

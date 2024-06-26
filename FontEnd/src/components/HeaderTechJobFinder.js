@@ -273,11 +273,8 @@ const HeaderTechJobFinder = () => {
               </ul>
             )}
           </div>
-          <Link to="/signup" style={linkStyle}>
-            Sign Up
-          </Link>
-          <Link to="/login" style={{ ...linkStyle, marginLeft: "10px" }}>
-            Login
+          <Link to="/signin" style={{ ...linkStyle, marginLeft: "10px" }}>
+            Sign In
           </Link>
         </div>
       </div>
