@@ -35,18 +35,6 @@ function Sidebar(props) {
             </Link>
           </li>{/* End Contact Page Nav */}
           <li className="nav-item">
-            <Link className="nav-link collapsed" to="/signup">
-              <i className="bi bi-card-list" />
-              <span>Sign Up</span>
-            </Link>
-          </li>{/* End Register Page Nav */}
-          <li className="nav-item">
-            <Link className="nav-link collapsed" to="/signin">
-              <i className="bi bi-box-arrow-in-right" />
-              <span>Sign In</span>
-            </Link>
-          </li>{/* End Login Page Nav */}
-          <li className="nav-item">
             <Link className="nav-link collapsed" to="/error">
               <i className="bi bi-dash-circle" />
               <span>Error 404</span>

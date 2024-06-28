@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe, faDollarSign } from "@fortawesome/free-solid-svg-icons";
+import UserService from "../service/UserService";
 const HeaderTechJobFinder = () => {
+  
   const [isHireDropdownVisible, setHireDropdownVisible] = useState(false);
   const [isSkillDropdownVisible, setSkillDropdownVisible] = useState(false);
   const [isLanguageDropdownVisible, setLanguageDropdownVisible] =
@@ -16,7 +18,15 @@ const HeaderTechJobFinder = () => {
   const [isExploreDropdownVisible, setExploreDropdownVisible] = useState(false);
   const [isLanguageMenuVisible, setLanguageMenuVisible] = useState(false);
   const [isCurrencyMenuVisible, setCurrencyMenuVisible] = useState(false);
+  
+  const isAuthenticated = UserService.isAuthenticated();
+  const handleLogout = () => {
+    const confirmDelete = window.confirm('Are you sure you want to logout this user?');
+    if (confirmDelete) {
+        UserService.logout();
+    }
 
+};
   return (
     <header style={headerStyle}>
       <div style={headerContentStyle}>
@@ -276,6 +286,10 @@ const HeaderTechJobFinder = () => {
           <Link to="/signin" style={{ ...linkStyle, marginLeft: "10px" }}>
             Sign In
           </Link>
+          {isAuthenticated && <Link to="/" onClick={handleLogout}  style={{ ...linkStyle, marginLeft: "10px" }}>
+            Logout
+          </Link>}
+
         </div>
       </div>
     </header>

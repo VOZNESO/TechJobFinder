@@ -11,9 +11,6 @@ function Error(props) {
                         <h2>The page you are looking for doesn't exist.</h2>
                         <Link className="btn" to="/admin">Back to home</Link>
                         <img src="assets/img/not-found.svg" className="img-fluid py-5" alt="Page Not Found" />
-                        <div className="credits">
-                            Designed by <a href="">Duongk</a>
-                        </div>
                     </section>
                 </div>
             </main>{/* End #main */}

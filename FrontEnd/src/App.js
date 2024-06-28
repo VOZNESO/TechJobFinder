@@ -4,12 +4,12 @@ import HomePage from "./components/HomePage";
 import Blog from "./components/Blog";
 import Dashboard from "./components/Admin/Dashboard";
 import Profile from "./components/Profile";
-import Error from "./components/Admin/Error";
-import FAQs from "./components/Admin/FAQs";
+import Error from "./components/Error";
+import FAQs from "./components/FAQs";
 import SignIn from "./components/SignIn";
 import SignUp from "./components/SignUp";
-import Blank from "./components/Admin/Blank";
-import Contact from "./components/Admin/Contact";
+import Blank from "./components/Blank";
+import Contact from "./components/Contact";
 import UserService from "./service/UserService";
 import UserManage from "./components/Admin/UserManage";
 const App = () => {
