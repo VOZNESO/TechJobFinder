@@ -26,14 +26,14 @@ import Footer from './common/Footer';
               <div className="col-xxl-4 col-md-6">
                 <div className="card info-card sales-card">
                   <div className="filter">
-                    <a className="icon" href="#" data-bs-toggle="dropdown"><i className="bi bi-three-dots" /></a>
+                    <a className="icon" href="1" data-bs-toggle="dropdown"><i className="bi bi-three-dots" /></a>
                     <ul className="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
                       <li className="dropdown-header text-start">
                         <h6>Filter</h6>
                       </li>
-                      <li><a className="dropdown-item" href="#">Today</a></li>
-                      <li><a className="dropdown-item" href="#">This Month</a></li>
-                      <li><a className="dropdown-item" href="#">This Year</a></li>
+                      <li><a className="dropdown-item" href="1">Today</a></li>
+                      <li><a className="dropdown-item" href="1">This Month</a></li>
+                      <li><a className="dropdown-item" href="1">This Year</a></li>
                     </ul>
                   </div>
                   <div className="card-body">
@@ -43,8 +43,8 @@ import Footer from './common/Footer';
                         <i className="bi bi-cart" />
                       </div>
                       <div className="ps-3">
-                        <h6>#45</h6>
-                        <span className="text-success small pt-# fw-bold">#2%</span> <span className="text-muted small pt-2 ps-#">increase</span>
+                        <h6>145</h6>
+                        <span className="text-success small pt-1 fw-bold">12%</span> <span className="text-muted small pt-2 ps-1">increase</span>
                       </div>
                     </div>
                   </div>
@@ -54,14 +54,14 @@ import Footer from './common/Footer';
               <div className="col-xxl-4 col-md-6">
                 <div className="card info-card revenue-card">
                   <div className="filter">
-                    <a className="icon" href="#" data-bs-toggle="dropdown"><i className="bi bi-three-dots" /></a>
+                    <a className="icon" href="1" data-bs-toggle="dropdown"><i className="bi bi-three-dots" /></a>
                     <ul className="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
                       <li className="dropdown-header text-start">
                         <h6>Filter</h6>
                       </li>
-                      <li><a className="dropdown-item" href="#">Today</a></li>
-                      <li><a className="dropdown-item" href="#">This Month</a></li>
-                      <li><a className="dropdown-item" href="#">This Year</a></li>
+                      <li><a className="dropdown-item" href="1">Today</a></li>
+                      <li><a className="dropdown-item" href="1">This Month</a></li>
+                      <li><a className="dropdown-item" href="1">This Year</a></li>
                     </ul>
                   </div>
                   <div className="card-body">
@@ -72,24 +72,24 @@ import Footer from './common/Footer';
                       </div>
                       <div className="ps-3">
                         <h6>$3,264</h6>
-                        <span className="text-success small pt-# fw-bold">8%</span> <span className="text-muted small pt-2 ps-#">increase</span>
+                        <span className="text-success small pt-1 fw-bold">8%</span> <span className="text-muted small pt-2 ps-1">increase</span>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>{/* End Revenue Card */}
               {/* Customers Card */}
-              <div className="col-xxl-4 col-xl-#2">
+              <div className="col-xxl-4 col-xl-12">
                 <div className="card info-card customers-card">
                   <div className="filter">
-                    <a className="icon" href="#" data-bs-toggle="dropdown"><i className="bi bi-three-dots" /></a>
+                    <a className="icon" href="1" data-bs-toggle="dropdown"><i className="bi bi-three-dots" /></a>
                     <ul className="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
                       <li className="dropdown-header text-start">
                         <h6>Filter</h6>
                       </li>
-                      <li><a className="dropdown-item" href="#">Today</a></li>
-                      <li><a className="dropdown-item" href="#">This Month</a></li>
-                      <li><a className="dropdown-item" href="#">This Year</a></li>
+                      <li><a className="dropdown-item" href="1">Today</a></li>
+                      <li><a className="dropdown-item" href="1">This Month</a></li>
+                      <li><a className="dropdown-item" href="1">This Year</a></li>
                     </ul>
                   </div>
                   <div className="card-body">
@@ -99,25 +99,25 @@ import Footer from './common/Footer';
                         <i className="bi bi-people" />
                       </div>
                       <div className="ps-3">
-                        <h6>#244</h6>
-                        <span className="text-danger small pt-# fw-bold">#2%</span> <span className="text-muted small pt-2 ps-#">decrease</span>
+                        <h6>1244</h6>
+                        <span className="text-danger small pt-1 fw-bold">12%</span> <span className="text-muted small pt-2 ps-1">decrease</span>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>{/* End Customers Card */}
               {/* Reports */}
-              <div className="col-#2">
+              <div className="col-12">
                 <div className="card">
                   <div className="filter">
-                    <a className="icon" href="#" data-bs-toggle="dropdown"><i className="bi bi-three-dots" /></a>
+                    <a className="icon" href="1" data-bs-toggle="dropdown"><i className="bi bi-three-dots" /></a>
                     <ul className="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
                       <li className="dropdown-header text-start">
                         <h6>Filter</h6>
                       </li>
-                      <li><a className="dropdown-item" href="#">Today</a></li>
-                      <li><a className="dropdown-item" href="#">This Month</a></li>
-                      <li><a className="dropdown-item" href="#">This Year</a></li>
+                      <li><a className="dropdown-item" href="1">Today</a></li>
+                      <li><a className="dropdown-item" href="1">This Month</a></li>
+                      <li><a className="dropdown-item" href="1">This Year</a></li>
                     </ul>
                   </div>
                   <div className="card-body">
@@ -129,17 +129,17 @@ import Footer from './common/Footer';
                 </div>
               </div>{/* End Reports */}
               {/* Recent Sales */}
-              <div className="col-#2">
+              <div className="col-12">
                 <div className="card recent-sales overflow-auto">
                   <div className="filter">
-                    <a className="icon" href="#" data-bs-toggle="dropdown"><i className="bi bi-three-dots" /></a>
+                    <a className="icon" href="1" data-bs-toggle="dropdown"><i className="bi bi-three-dots" /></a>
                     <ul className="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
                       <li className="dropdown-header text-start">
                         <h6>Filter</h6>
                       </li>
-                      <li><a className="dropdown-item" href="#">Today</a></li>
-                      <li><a className="dropdown-item" href="#">This Month</a></li>
-                      <li><a className="dropdown-item" href="#">This Year</a></li>
+                      <li><a className="dropdown-item" href="1">Today</a></li>
+                      <li><a className="dropdown-item" href="1">This Month</a></li>
+                      <li><a className="dropdown-item" href="1">This Year</a></li>
                     </ul>
                   </div>
                   <div className="card-body">
@@ -147,7 +147,7 @@ import Footer from './common/Footer';
                     <table className="table table-borderless datatable">
                       <thead>
                         <tr>
-                          <th scope="col">#</th>
+                          <th scope="col">1</th>
                           <th scope="col">Customer</th>
                           <th scope="col">Product</th>
                           <th scope="col">Price</th>
@@ -156,38 +156,38 @@ import Footer from './common/Footer';
                       </thead>
                       <tbody>
                         <tr>
-                          <th scope="row"><a href="#">#2457</a></th>
+                          <th scope="row"><a href="1">12457</a></th>
                           <td>Brandon Jacob</td>
-                          <td><a href="#" className="text-primary">At praesentium minu</a></td>
+                          <td><a href="1" className="text-primary">At praesentium minu</a></td>
                           <td>$64</td>
                           <td><span className="badge bg-success">Approved</span></td>
                         </tr>
                         <tr>
-                          <th scope="row"><a href="#">#2#47</a></th>
+                          <th scope="row"><a href="1">12147</a></th>
                           <td>Bridie Kessler</td>
-                          <td><a href="#" className="text-primary">Blanditiis dolor omnis similique</a></td>
+                          <td><a href="1" className="text-primary">Blanditiis dolor omnis similique</a></td>
                           <td>$47</td>
                           <td><span className="badge bg-warning">Pending</span></td>
                         </tr>
                         <tr>
-                          <th scope="row"><a href="#">#2049</a></th>
+                          <th scope="row"><a href="1">12049</a></th>
                           <td>Ashleigh Langosh</td>
-                          <td><a href="#" className="text-primary">At recusandae consectetur</a></td>
-                          <td>$#47</td>
+                          <td><a href="1" className="text-primary">At recusandae consectetur</a></td>
+                          <td>$147</td>
                           <td><span className="badge bg-success">Approved</span></td>
                         </tr>
                         <tr>
-                          <th scope="row"><a href="#">#2644</a></th>
+                          <th scope="row"><a href="1">12644</a></th>
                           <td>Angus Grady</td>
-                          <td><a href="#" className="text-primar">Ut voluptatem id earum et</a></td>
+                          <td><a href="1" className="text-primar">Ut voluptatem id earum et</a></td>
                           <td>$67</td>
                           <td><span className="badge bg-danger">Rejected</span></td>
                         </tr>
                         <tr>
-                          <th scope="row"><a href="#">#2644</a></th>
+                          <th scope="row"><a href="1">12644</a></th>
                           <td>Raheem Lehner</td>
-                          <td><a href="#" className="text-primary">Sunt similique distinctio</a></td>
-                          <td>$#65</td>
+                          <td><a href="1" className="text-primary">Sunt similique distinctio</a></td>
+                          <td>$165</td>
                           <td><span className="badge bg-success">Approved</span></td>
                         </tr>
                       </tbody>
@@ -196,17 +196,17 @@ import Footer from './common/Footer';
                 </div>
               </div>{/* End Recent Sales */}
               {/* Top Selling */}
-              <div className="col-#2">
+              <div className="col-12">
                 <div className="card top-selling overflow-auto">
                   <div className="filter">
-                    <a className="icon" href="#" data-bs-toggle="dropdown"><i className="bi bi-three-dots" /></a>
+                    <a className="icon" href="1" data-bs-toggle="dropdown"><i className="bi bi-three-dots" /></a>
                     <ul className="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
                       <li className="dropdown-header text-start">
                         <h6>Filter</h6>
                       </li>
-                      <li><a className="dropdown-item" href="#">Today</a></li>
-                      <li><a className="dropdown-item" href="#">This Month</a></li>
-                      <li><a className="dropdown-item" href="#">This Year</a></li>
+                      <li><a className="dropdown-item" href="1">Today</a></li>
+                      <li><a className="dropdown-item" href="1">This Month</a></li>
+                      <li><a className="dropdown-item" href="1">This Year</a></li>
                     </ul>
                   </div>
                   <div className="card-body pb-0">
@@ -223,38 +223,38 @@ import Footer from './common/Footer';
                       </thead>
                       <tbody>
                         <tr>
-                          <th scope="row"><a href="#"><img src="../assets/img/product-1.jpg" alt /></a></th>
-                          <td><a href="#" className="text-primary fw-bold">Ut inventore ipsa voluptas nulla</a></td>
+                          <th scope="row"><a href="1"><img src="../assets/img/product-1.jpg" alt="" /></a></th>
+                          <td><a href="1" className="text-primary fw-bold">Ut inventore ipsa voluptas nulla</a></td>
                           <td>$64</td>
-                          <td className="fw-bold">#24</td>
+                          <td className="fw-bold">124</td>
                           <td>$5,828</td>
                         </tr>
                         <tr>
-                          <th scope="row"><a href="#"><img src="../assets/img/product-2.jpg" alt /></a></th>
-                          <td><a href="#" className="text-primary fw-bold">Exercitationem similique doloremque</a></td>
+                          <th scope="row"><a href="1"><img src="../assets/img/product-2.jpg" alt="" /></a></th>
+                          <td><a href="1" className="text-primary fw-bold">Exercitationem similique doloremque</a></td>
                           <td>$46</td>
                           <td className="fw-bold">98</td>
                           <td>$4,508</td>
                         </tr>
                         <tr>
-                          <th scope="row"><a href="#"><img src="../assets/img/product-3.jpg" alt /></a></th>
-                          <td><a href="#" className="text-primary fw-bold">Doloribus nisi exercitationem</a></td>
+                          <th scope="row"><a href="1"><img src="../assets/img/product-3.jpg" alt="" /></a></th>
+                          <td><a href="1" className="text-primary fw-bold">Doloribus nisi exercitationem</a></td>
                           <td>$59</td>
                           <td className="fw-bold">74</td>
                           <td>$4,366</td>
                         </tr>
                         <tr>
-                          <th scope="row"><a href="#"><img src="../assets/img/product-4.jpg" alt /></a></th>
-                          <td><a href="#" className="text-primary fw-bold">Officiis quaerat sint rerum error</a></td>
+                          <th scope="row"><a href="1"><img src="../assets/img/product-4.jpg" alt="" /></a></th>
+                          <td><a href="1" className="text-primary fw-bold">Officiis quaerat sint rerum error</a></td>
                           <td>$32</td>
                           <td className="fw-bold">63</td>
-                          <td>$2,0#6</td>
+                          <td>$2,016</td>
                         </tr>
                         <tr>
-                          <th scope="row"><a href="#"><img src="../assets/img/product-5.jpg" alt /></a></th>
-                          <td><a href="#" className="text-primary fw-bold">Sit unde debitis delectus repellendus</a></td>
+                          <th scope="row"><a href="1"><img src="../assets/img/product-5.jpg" alt="" /></a></th>
+                          <td><a href="1" className="text-primary fw-bold">Sit unde debitis delectus repellendus</a></td>
                           <td>$79</td>
-                          <td className="fw-bold">4#</td>
+                          <td className="fw-bold">41</td>
                           <td>$3,239</td>
                         </tr>
                       </tbody>
@@ -269,14 +269,14 @@ import Footer from './common/Footer';
             {/* Recent Activity */}
             <div className="card">
               <div className="filter">
-                <a className="icon" href="#" data-bs-toggle="dropdown"><i className="bi bi-three-dots" /></a>
+                <a className="icon" href="1" data-bs-toggle="dropdown"><i className="bi bi-three-dots" /></a>
                 <ul className="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
                   <li className="dropdown-header text-start">
                     <h6>Filter</h6>
                   </li>
-                  <li><a className="dropdown-item" href="#">Today</a></li>
-                  <li><a className="dropdown-item" href="#">This Month</a></li>
-                  <li><a className="dropdown-item" href="#">This Year</a></li>
+                  <li><a className="dropdown-item" href="1">Today</a></li>
+                  <li><a className="dropdown-item" href="1">This Month</a></li>
+                  <li><a className="dropdown-item" href="1">This Year</a></li>
                 </ul>
               </div>
               <div className="card-body">
@@ -286,7 +286,7 @@ import Footer from './common/Footer';
                     <div className="activite-label">32 min</div>
                     <i className="bi bi-circle-fill activity-badge text-success align-self-start" />
                     <div className="activity-content">
-                      Quia quae rerum <a href="#" className="fw-bold text-dark">explicabo officiis</a> beatae
+                      Quia quae rerum <a href="1" className="fw-bold text-dark">explicabo officiis</a> beatae
                     </div>
                   </div>{/* End activity item*/}
                   <div className="activity-item d-flex">
@@ -304,10 +304,10 @@ import Footer from './common/Footer';
                     </div>
                   </div>{/* End activity item*/}
                   <div className="activity-item d-flex">
-                    <div className="activite-label"># day</div>
+                    <div className="activite-label">1 day</div>
                     <i className="bi bi-circle-fill activity-badge text-info align-self-start" />
                     <div className="activity-content">
-                      Tempore autem saepe <a href="#" className="fw-bold text-dark">occaecati voluptatem</a> tempore
+                      Tempore autem saepe <a href="1" className="fw-bold text-dark">occaecati voluptatem</a> tempore
                     </div>
                   </div>{/* End activity item*/}
                   <div className="activity-item d-flex">
@@ -330,14 +330,14 @@ import Footer from './common/Footer';
             {/* Budget Report */}
             <div className="card">
               <div className="filter">
-                <a className="icon" href="#" data-bs-toggle="dropdown"><i className="bi bi-three-dots" /></a>
+                <a className="icon" href="1" data-bs-toggle="dropdown"><i className="bi bi-three-dots" /></a>
                 <ul className="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
                   <li className="dropdown-header text-start">
                     <h6>Filter</h6>
                   </li>
-                  <li><a className="dropdown-item" href="#">Today</a></li>
-                  <li><a className="dropdown-item" href="#">This Month</a></li>
-                  <li><a className="dropdown-item" href="#">This Year</a></li>
+                  <li><a className="dropdown-item" href="1">Today</a></li>
+                  <li><a className="dropdown-item" href="1">This Month</a></li>
+                  <li><a className="dropdown-item" href="1">This Year</a></li>
                 </ul>
               </div>
               <div className="card-body pb-0">
@@ -348,14 +348,14 @@ import Footer from './common/Footer';
             {/* Website Traffic */}
             <div className="card">
               <div className="filter">
-                <a className="icon" href="#" data-bs-toggle="dropdown"><i className="bi bi-three-dots" /></a>
+                <a className="icon" href="1" data-bs-toggle="dropdown"><i className="bi bi-three-dots" /></a>
                 <ul className="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
                   <li className="dropdown-header text-start">
                     <h6>Filter</h6>
                   </li>
-                  <li><a className="dropdown-item" href="#">Today</a></li>
-                  <li><a className="dropdown-item" href="#">This Month</a></li>
-                  <li><a className="dropdown-item" href="#">This Year</a></li>
+                  <li><a className="dropdown-item" href="1">Today</a></li>
+                  <li><a className="dropdown-item" href="1">This Month</a></li>
+                  <li><a className="dropdown-item" href="1">This Year</a></li>
                 </ul>
               </div>
                
@@ -363,32 +363,32 @@ import Footer from './common/Footer';
             {/* News & Updates Traffic */}
             <div className="card">
               <div className="filter">
-                <a className="icon" href="#" data-bs-toggle="dropdown"><i className="bi bi-three-dots" /></a>
+                <a className="icon" href="1" data-bs-toggle="dropdown"><i className="bi bi-three-dots" /></a>
                 <ul className="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
                   <li className="dropdown-header text-start">
                     <h6>Filter</h6>
                   </li>
-                  <li><a className="dropdown-item" href="#">Today</a></li>
-                  <li><a className="dropdown-item" href="#">This Month</a></li>
-                  <li><a className="dropdown-item" href="#">This Year</a></li>
+                  <li><a className="dropdown-item" href="1">Today</a></li>
+                  <li><a className="dropdown-item" href="1">This Month</a></li>
+                  <li><a className="dropdown-item" href="1">This Year</a></li>
                 </ul>
               </div>
               <div className="card-body pb-0">
                 <h5 className="card-title">News &amp; Updates <span>| Today</span></h5>
                 <div className="news">
                   <div className="post-item clearfix">
-                    <img src="../assets/img/news-1.jpg" alt />
-                    <h4><a href="#">Nihil blanditiis at in nihil autem</a></h4>
+                    <img src="../assets/img/news-1.jpg" alt="" />
+                    <h4><a href="1">Nihil blanditiis at in nihil autem</a></h4>
                     <p>Sit recusandae non aspernatur laboriosam. Quia enim eligendi sed ut harum...</p>
                   </div>
                   <div className="post-item clearfix">
-                    <img src="../assets/img/news-2.jpg" alt />
-                    <h4><a href="#">Quidem autem et impedit</a></h4>
+                    <img src="../assets/img/news-2.jpg" alt="" />
+                    <h4><a href="1">Quidem autem et impedit</a></h4>
                     <p>Illo nemo neque maiores vitae officiis cum eum turos elan dries werona nande...</p>
                   </div>
                   <div className="post-item clearfix">
-                    <img src="../assets/img/news-3.jpg" alt />
-                    <h4><a href="#">Id quia et et ut maxime similique occaecati ut</a></h4>
+                    <img src="../assets/img/news-3.jpg" alt="" />
+                    <h4><a href="1">Id quia et et ut maxime similique occaecati ut</a></h4>
                     <p>Fugiat voluptas vero eaque accusantium eos. Consequuntur sed ipsam et totam...</p>
                   </div>
                 </div>{/* End sidebar recent posts*/}
@@ -397,7 +397,7 @@ import Footer from './common/Footer';
           </div>{/* End Right side columns */}
         </div>
       </section>
-    </main>{/* End #main */}
+    </main>{/* End 1main */}
     
     <Footer/>
   </div>

@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe, faDollarSign } from "@fortawesome/free-solid-svg-icons";
 import UserService from "../service/UserService";
 const HeaderTechJobFinder = () => {
-  
+
   const [isHireDropdownVisible, setHireDropdownVisible] = useState(false);
   const [isSkillDropdownVisible, setSkillDropdownVisible] = useState(false);
   const [isLanguageDropdownVisible, setLanguageDropdownVisible] =
@@ -18,15 +18,21 @@ const HeaderTechJobFinder = () => {
   const [isExploreDropdownVisible, setExploreDropdownVisible] = useState(false);
   const [isLanguageMenuVisible, setLanguageMenuVisible] = useState(false);
   const [isCurrencyMenuVisible, setCurrencyMenuVisible] = useState(false);
+
   
-  const isAuthenticated = UserService.isAuthenticated();
+  const [isAuthenticated, setIsAuthenticated] = useState(UserService.isAuthenticated());
   const handleLogout = () => {
     const confirmDelete = window.confirm('Are you sure you want to logout this user?');
     if (confirmDelete) {
-        UserService.logout();
+      UserService.logout();
+      setIsAuthenticated(false); // Cập nhật state sau khi đăng xuất
     }
+  };
+  
+  useEffect(() => {
+    setIsAuthenticated(UserService.isAuthenticated());
+  }, []);
 
-};
   return (
     <header style={headerStyle}>
       <div style={headerContentStyle}>
@@ -283,10 +289,10 @@ const HeaderTechJobFinder = () => {
               </ul>
             )}
           </div>
-          <Link to="/signin" style={{ ...linkStyle, marginLeft: "10px" }}>
+          <Link to="/signin" style={{ ...linkStyle, marginLeft: "10px", display: !isAuthenticated ? 'inline' : 'none' }}>
             Sign In
           </Link>
-          {isAuthenticated && <Link to="/" onClick={handleLogout}  style={{ ...linkStyle, marginLeft: "10px" }}>
+          {isAuthenticated && <Link to="/" onClick={handleLogout} style={{ ...linkStyle, marginLeft: "10px" }}>
             Logout
           </Link>}
 

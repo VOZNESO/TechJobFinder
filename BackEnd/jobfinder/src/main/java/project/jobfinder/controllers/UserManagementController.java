@@ -5,6 +5,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 import project.jobfinder.dtos.UsersDTO;
 import project.jobfinder.entities.OurUsers;
 import project.jobfinder.services.UserManagementService;
@@ -17,8 +18,58 @@ public class UserManagementController {
         this.userManagementService = userManagementService;
     }
 
-    @PostMapping("/auth/register")
-    public ResponseEntity<UsersDTO> register(@RequestBody UsersDTO reqres){
+    @PostMapping(value = "/auth/register", consumes = {"multipart/form-data"})
+    public ResponseEntity<UsersDTO> register(@RequestParam("username") String username,
+                                             @RequestParam("password") String password,
+                                             @RequestParam("email") String email,
+                                             @RequestParam("firstName") String firstName,
+                                             @RequestParam("lastName") String lastName,
+                                             @RequestParam("phone") String phone,
+                                             @RequestParam("address") String address,
+                                             @RequestParam("bio") String bio,
+                                             @RequestParam("dateOfBirth") String dateOfBirth,
+                                             @RequestParam("role") String role,
+                                             @RequestParam("avatar") MultipartFile avatar) {
+        UsersDTO reqres = new UsersDTO();
+        reqres.setUsername(username);
+        reqres.setPassword(password);
+        reqres.setEmail(email);
+        reqres.setFirstName(firstName);
+        reqres.setLastName(lastName);
+        reqres.setPhone(phone);
+        reqres.setAddress(address);
+        reqres.setBio(bio);
+        reqres.setDateOfBirth(dateOfBirth);
+        reqres.setRole(role);
+        reqres.setAvatarUrl(avatar); // Bind file ảnh vào DTO
+
+        return ResponseEntity.ok(userManagementService.register(reqres));
+    }
+
+    @PostMapping(value = "/admin/create-user", consumes = {"multipart/form-data"})
+    public ResponseEntity<UsersDTO> createUser(@RequestParam("username") String username,
+                                             @RequestParam("password") String password,
+                                             @RequestParam("email") String email,
+                                             @RequestParam("firstName") String firstName,
+                                             @RequestParam("lastName") String lastName,
+                                             @RequestParam("phone") String phone,
+                                             @RequestParam("address") String address,
+                                             @RequestParam("bio") String bio,
+                                             @RequestParam("dateOfBirth") String dateOfBirth,
+                                             @RequestParam("role") String role,
+                                             @RequestParam("avatar") MultipartFile avatar) {
+        UsersDTO reqres = new UsersDTO();
+        reqres.setUsername(username);
+        reqres.setPassword(password);
+        reqres.setEmail(email);
+        reqres.setFirstName(firstName);
+        reqres.setLastName(lastName);
+        reqres.setPhone(phone);
+        reqres.setAddress(address);
+        reqres.setBio(bio);
+        reqres.setDateOfBirth(dateOfBirth);
+        reqres.setRole(role);
+        reqres.setAvatarUrl(avatar);
         return ResponseEntity.ok(userManagementService.register(reqres));
     }
 

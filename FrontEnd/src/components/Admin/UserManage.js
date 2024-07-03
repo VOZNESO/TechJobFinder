@@ -4,17 +4,18 @@ import Sidebar from './common/Sidebar';
 import Footer from './common/Footer';
 import { DataTable } from "simple-datatables";
 import { Link } from 'react-router-dom';
-import UserService from '../../service/UserService'
+import UserService from '../../service/UserService';
 
 function UserManage(props) {
     const [users, setUsers] = useState([]);
+
     useEffect(() => {
         // Fetch users data when the component mounts
         fetchUsers();
     }, []);
+
     const fetchUsers = async () => {
         try {
-
             const token = localStorage.getItem('token'); // Retrieve the token from localStorage
             const response = await UserService.getAllUser(token);
             //   console.log(response);
@@ -29,12 +30,10 @@ function UserManage(props) {
         window.location.href = `/update-user/${userId}`;
     };
 
-
     const deleteUser = async (userId) => {
         try {
             // Prompt for confirmation before deleting the user
             const confirmDelete = window.confirm('Are you sure you want to delete this user?');
-
             const token = localStorage.getItem('token'); // Retrieve the token from localStorage
             if (confirmDelete) {
                 await UserService.deleteUser(userId, token);
@@ -52,7 +51,6 @@ function UserManage(props) {
             dataTable.destroy();
         };
     }, []);
-
 
     return (
         <div>
@@ -81,7 +79,7 @@ function UserManage(props) {
                                                 <th>
                                                     <b>Name</b>
                                                 </th>
-                                                <th>Email.</th>
+                                                <th>Email</th>
                                                 <th>City</th>
                                                 <th>Action</th>
                                             </tr>
@@ -96,7 +94,7 @@ function UserManage(props) {
                                                     <td>
                                                         <button className="btn btn-danger" onClick={() => deleteUser(user.id)}>Delete</button>|
                                                         <button className='btn btn-primary' onClick={() => handleUpdateUser(user.id)}>Update</button>
-                                                        <button className='btn btn-warning' >Ban</button>
+                                                        <button className='btn btn-warning'>Ban</button>
                                                     </td>
                                                 </tr>
                                             ))}
@@ -110,7 +108,6 @@ function UserManage(props) {
                 </section>
             </main>{/* End #main */}
             <Footer />
-
         </div>
     );
 }

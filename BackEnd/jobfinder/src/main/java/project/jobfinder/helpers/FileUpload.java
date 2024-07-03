@@ -22,7 +22,7 @@ public class FileUpload {
         if(!directory.exists()){
             directory.mkdirs();
         }
-        String fileName = UUID.randomUUID().toString()+ multipartFile.getOriginalFilename();
+        String fileName = UUID.randomUUID().toString()+ "_" + multipartFile.getOriginalFilename();
         Path destination = Path.of(exactSubFolder, fileName);
         Files.copy(multipartFile.getInputStream(), destination);
         return fileName;

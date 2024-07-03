@@ -6,8 +6,11 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import project.jobfinder.dtos.UsersDTO;
 import project.jobfinder.entities.OurUsers;
+import project.jobfinder.helpers.FileUpload;
 import project.jobfinder.repository.UsersRepository;
 
+import java.io.File;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.List;
@@ -19,17 +22,32 @@ public class UserManagementService {
     private JWTUtils jwtUtils;
     private AuthenticationManager authenticationManager;
     private PasswordEncoder passwordEncoder;
+    private FileUpload fileUpload;
+    private String rootUrl = "http://localhost:8080/";
+    private String subFolder = "avatars";
+    private String uploadFolder = "uploads";
+    private String urlImage = rootUrl + uploadFolder + File.separator + subFolder;
 
-    public UserManagementService(UsersRepository usersRepository, JWTUtils jwtUtils, AuthenticationManager authenticationManager, PasswordEncoder passwordEncoder) {
+    public UserManagementService(UsersRepository usersRepository, JWTUtils jwtUtils, AuthenticationManager authenticationManager, PasswordEncoder passwordEncoder,FileUpload fileUpload) {
         this.usersRepository = usersRepository;
         this.jwtUtils = jwtUtils;
         this.authenticationManager = authenticationManager;
         this.passwordEncoder = passwordEncoder;
+        this.fileUpload = fileUpload;
     }
 
     public UsersDTO register(UsersDTO registrationRequest){
         UsersDTO usersDTO = new UsersDTO();
-        try{
+        try {
+            // Lưu trữ file avatar nếu có
+            String avatarFileName = null;
+            if (registrationRequest.getAvatarUrl() != null) {
+                avatarFileName = fileUpload.storeImage("avatars", registrationRequest.getAvatarUrl());
+            }
+
+            LocalDate dateOfBirth = LocalDate.parse(registrationRequest.getDateOfBirth());
+
+            // Tạo đối tượng OurUsers từ registrationRequest
             OurUsers ourUsers = new OurUsers();
             ourUsers.setUsername(registrationRequest.getUsername());
             ourUsers.setPassword(passwordEncoder.encode(registrationRequest.getPassword()));
@@ -39,19 +57,61 @@ public class UserManagementService {
             ourUsers.setPhone(registrationRequest.getPhone());
             ourUsers.setAddress(registrationRequest.getAddress());
             ourUsers.setBio(registrationRequest.getBio());
-            ourUsers.setDateOfBirth(registrationRequest.getDateOfBirth());
+            ourUsers.setDateOfBirth(dateOfBirth);
             ourUsers.setRole(registrationRequest.getRole());
-            ourUsers.setAvatar(registrationRequest.getAvatar());
+            ourUsers.setAvatar(avatarFileName); // Lưu tên file avatar
             ourUsers.setCreatedAt(LocalDateTime.now());
             ourUsers.setUpdatedAt(LocalDateTime.now());
 
+            // Lưu OurUsers vào cơ sở dữ liệu
             OurUsers ourUsersResult = usersRepository.save(ourUsers);
-            if(ourUsersResult.getId() > 0){
+            if (ourUsersResult.getId() > 0) {
                 usersDTO.setOurUsers(ourUsersResult);
                 usersDTO.setMessage("User Save Successfully");
                 usersDTO.setStatusCode(200);
             }
-        } catch (Exception e){
+        } catch (Exception e) {
+            usersDTO.setStatusCode(500);
+            usersDTO.setError(e.getMessage());
+        }
+        return usersDTO;
+    }
+
+    public UsersDTO createUser(UsersDTO registrationRequest){
+        UsersDTO usersDTO = new UsersDTO();
+        try {
+            // Lưu trữ file avatar nếu có
+            String avatarFileName = null;
+            if (registrationRequest.getAvatarUrl() != null) {
+                avatarFileName = fileUpload.storeImage("avatars", registrationRequest.getAvatarUrl());
+            }
+
+            LocalDate dateOfBirth = LocalDate.parse(registrationRequest.getDateOfBirth());
+
+            // Tạo đối tượng OurUsers từ registrationRequest
+            OurUsers ourUsers = new OurUsers();
+            ourUsers.setUsername(registrationRequest.getUsername());
+            ourUsers.setPassword(passwordEncoder.encode(registrationRequest.getPassword()));
+            ourUsers.setEmail(registrationRequest.getEmail());
+            ourUsers.setFirstName(registrationRequest.getFirstName());
+            ourUsers.setLastName(registrationRequest.getLastName());
+            ourUsers.setPhone(registrationRequest.getPhone());
+            ourUsers.setAddress(registrationRequest.getAddress());
+            ourUsers.setBio(registrationRequest.getBio());
+            ourUsers.setDateOfBirth(dateOfBirth);
+            ourUsers.setRole(registrationRequest.getRole());
+            ourUsers.setAvatar(avatarFileName); // Lưu tên file avatar
+            ourUsers.setCreatedAt(LocalDateTime.now());
+            ourUsers.setUpdatedAt(LocalDateTime.now());
+
+            // Lưu OurUsers vào cơ sở dữ liệu
+            OurUsers ourUsersResult = usersRepository.save(ourUsers);
+            if (ourUsersResult.getId() > 0) {
+                usersDTO.setOurUsers(ourUsersResult);
+                usersDTO.setMessage("User Save Successfully");
+                usersDTO.setStatusCode(200);
+            }
+        } catch (Exception e) {
             usersDTO.setStatusCode(500);
             usersDTO.setError(e.getMessage());
         }

@@ -1,7 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link , useNavigate} from 'react-router-dom';
+import UserService from '../../../service/UserService';
 
 function Sidebar(props) {
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    UserService.logout();
+    navigate('/signin');
+  };
   return (
     <div>
       {/* ======= Sidebar ======= */}
@@ -53,11 +60,11 @@ function Sidebar(props) {
             </Link>
           </li>{/* End F.A.Q Page Nav */}
           <li className="nav-item">
-            <Link className="nav-link collapsed" to="/">
+            <Link className="nav-link collapsed" onClick={handleLogout}>
               <i className="bi bi-box-arrow-in-left" />
               <span>Logout</span>
-            </Link> 
-            </li>
+            </Link>
+          </li>
         </ul>
       </aside>{/* End Sidebar*/}
     </div>

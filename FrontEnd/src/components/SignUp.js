@@ -12,7 +12,7 @@ function SignUp(props) {
                                 <div className="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
                                     <div className="d-flex justify-content-center py-4">
                                         <Link to="/" className="logo d-flex align-items-center w-auto">
-                                            <img src="assets/img/logo.png" alt />
+                                            <img src="assets/img/logo.png" alt="" />
                                             <span className="d-none d-lg-block">TechJobFinders</span>
                                         </Link>
                                     </div>{/* End Logo */}
@@ -49,7 +49,7 @@ function SignUp(props) {
                                                 <div className="col-12">
                                                     <div className="form-check">
                                                         <input className="form-check-input" name="terms" type="checkbox" id="acceptTerms" required />
-                                                        <label className="form-check-label" htmlFor="acceptTerms">I agree and accept the <a href="#">terms and conditions</a></label>
+                                                        <label className="form-check-label" htmlFor="acceptTerms">I agree and accept the <a href="1">terms and conditions</a></label>
                                                         <div className="invalid-feedback">You must agree before submitting.</div>
                                                     </div>
                                                 </div>
